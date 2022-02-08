@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/top_Doc_Home">
+    <fragment
+        android:id="@+id/top_Doc_Home"
+        android:name="com.cronocode.moviecatalog.TopDocHome"
+        android:label="fragment_top_doc_home"
+        tools:layout="@layout/fragment_top_doc_home" >
+        <action
+            android:id="@+id/action_top_Doc_Home_to_courseDetails"
+            app:destination="@id/courseDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseDetails"
+        android:name="com.cronocode.moviecatalog.CourseDetails"
+        android:label="CourseDetails" />
+</navigation>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?><!--first of all you have to change
+    the layout as CoordinatorLayout.
+    This is the first thing we need to do.-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--AppBarLayout helps the toolbar and other components to react on
+        scroll changes. I am using Dark theme for AppBarLayout.
+        Inside this AppBarLayout i
+        have used CollapsingToolbarLayout. -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- In CollapsingToolbarLayout some important attributes are:
+         i)  app:layout_scrollFlags which is used to specify how collapsing
+             layout behaves when content is scrolled.I have used
+             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+             so it will scroll until it's is completely collapsed.
+         ii) app:contentScrim="@color/green" that specifies the color
+              of the collapsed toolbar -->
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/dark_grey"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="@string/app_name">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--We are adding the image that we have added earlier
+                         in the drawable folder.The attribute app:layout_collapseMode="parallax"
+                         causes the image to move when user scrolls at a specific ratio. -->
+                <ImageView
+                    android:id="@+id/course_details_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/preview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/small_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.926" />
+
+
+                <!-- The attribute app:layout_collapseMode="pin" is set so that
+                         sticks to the top when the user scrolls the view up-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--Now add the NestedScrollView-->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29dp">
+
+            <TextView
+                android:id="@+id/course_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginRight="19dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="title"
+                android:textColor="@color/Black1"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RatingBar
+                android:id="@+id/course_rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/gold"
+                android:stepSize="0.1"
+                app:layout_constraintStart_toStartOf="@+id/course_title"
+                app:layout_constraintTop_toBottomOf="@+id/course_title"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/rating_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="rating details"
+                android:textColor="@color/gray3"
+                android:textSize="12dp"
+                app:layout_constraintLeft_toRightOf="@id/course_rating"
+                app:layout_constraintTop_toTopOf="@id/course_rating" />
+
+            <ImageView
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/clock_1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints,NotSibling" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="time"
+                app:layout_constraintBottom_toBottomOf="@+id/clock"
+                app:layout_constraintLeft_toRightOf="@+id/clock"
+                app:layout_constraintTop_toTopOf="@+id/clock" />
+
+            <View
+                android:id="@+id/view_layout1"
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/gray5"
+                app:layout_constraintBottom_toBottomOf="@+id/time"
+                app:layout_constraintStart_toEndOf="@+id/time"
+                app:layout_constraintTop_toTopOf="@+id/tab_item" />
+
+            <TextView
+                android:id="@+id/video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="6 videos"
+                app:layout_constraintBottom_toBottomOf="@+id/view_layout1"
+                app:layout_constraintStart_toEndOf="@+id/view_layout1"
+                app:layout_constraintTop_toTopOf="@+id/view_layout1" />
+
+            <ImageView
+                android:id="@+id/calendar"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/group"
+                app:layout_constraintStart_toStartOf="@+id/course_rating"
+                app:layout_constraintTop_toBottomOf="@+id/course_rating" />
+
+            <TextView
+                android:id="@+id/last_date_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="Last date for enrollment : "
+                android:textColor="@color/black5"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toRightOf="@+id/calendar"
+                app:layout_constraintTop_toTopOf="@+id/calendar" />
+
+            <TextView
+                android:id="@+id/last_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="date"
+                app:layout_constraintLeft_toRightOf="@+id/last_date_text"
+                app:layout_constraintTop_toTopOf="@+id/last_date_text" />
+
+            <View
+                android:id="@+id/view_layout"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="31dp"
+
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="29dp"
+                android:background="@drawable/view_background"
+
+                android:padding="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/doctor_imageView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/calendar"
+                app:layout_constraintTop_toTopOf="@+id/doctor_imageView2" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/doctor_imageView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toEndOf="@+id/calendar"
+
+                app:layout_constraintTop_toBottomOf="@+id/calendar"
+                app:layout_goneMarginTop="2dp" />
+
+            <TextView
+                android:id="@+id/instructor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="instructor"
+                android:textSize="12dp"
+                app:layout_constraintLeft_toRightOf="@+id/doctor_imageView2"
+                app:layout_constraintTop_toTopOf="@+id/doctor_imageView2" />
+
+            <TextView
+                android:id="@+id/doctor_name1"
+                android:layout_width="269dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Doctor name"
+                android:textColor="@color/black5"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/instructor"
+                app:layout_constraintTop_toBottomOf="@+id/instructor" />
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_layout">
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabGravity="fill"
+                    app:tabMode="scrollable"
+                    app:tabTextColor="@color/black7" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_page"
+                android:layout_width="match_parent"
+                android:layout_height="356dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appBarLayout1">
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <View
+            android:id="@+id/button_view"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_bg_gradiant"
+            app:layout_constraintBottom_toBottomOf="@id/prise"
+            app:layout_constraintEnd_toEndOf="@+id/buy_now"
+            app:layout_constraintStart_toStartOf="@id/prise"
+            app:layout_constraintTop_toTopOf="@id/prise">
+
+        </View>
+
+        <TextView
+            android:id="@+id/prise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="7000"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/button_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/buy_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Buy now >"
+            android:layout_marginStart="175dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/prise"
+            app:layout_constraintStart_toEndOf="@+id/prise"
+            app:layout_constraintTop_toTopOf="@+id/prise" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
