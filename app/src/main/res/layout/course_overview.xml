@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/description_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="13.5dp"
+        android:text="Description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description_overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="description_overview"
+        app:layout_constraintStart_toStartOf="@+id/description_textView"
+        app:layout_constraintTop_toBottomOf="@+id/description_textView" />
+
+    <TextView
+        android:id="@+id/Certification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Certification"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/description_overview"
+        app:layout_constraintTop_toBottomOf="@+id/description_overview" />
+
+    <TextView
+        android:id="@+id/Certification_overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Certification_overview"
+        app:layout_constraintStart_toStartOf="@+id/Certification"
+        app:layout_constraintTop_toBottomOf="@+id/Certification" />
+
+    <TextView
+        android:id="@+id/course_for_textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="course_for_textView11"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="@+id/Certification_overview"
+        app:layout_constraintTop_toBottomOf="@+id/Certification_overview" />
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Overview"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/course_for_textView11"
+        app:layout_constraintTop_toBottomOf="@+id/course_for_textView11" />
+</androidx.constraintlayout.widget.ConstraintLayout>
