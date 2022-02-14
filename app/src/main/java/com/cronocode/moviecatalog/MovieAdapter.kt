@@ -7,9 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.cronocode.moviecatalog.models.Courses
 import com.cronocode.moviecatalog.models.MovieTmdb
-import kotlinx.android.synthetic.main.movie_item.view.*
+//import kotlinx.android.synthetic.main.movie_item.view.*
 
-class MovieAdapter(
+/*class MovieAdapter(
     private val movies: List<Courses>
 ) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
 
@@ -35,4 +35,4 @@ class MovieAdapter(
 
         //holder.bindMovie(ItemsViewModel.(position))
     }
-}
+}*/

@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.cronocode.moviecatalog.databinding.FragmentCourseReviewBinding
 import com.cronocode.moviecatalog.models.Courses1
-import kotlinx.android.synthetic.main.fragment_course_details.course_rating
-import kotlinx.android.synthetic.main.fragment_course_review.*
+//import kotlinx.android.synthetic.main.fragment_course_details.course_rating
+//import kotlinx.android.synthetic.main.fragment_course_review.*
 
 
 class CourseReview(result: Courses1) : Fragment() {
@@ -22,7 +22,7 @@ class CourseReview(result: Courses1) : Fragment() {
         return binding!!.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+ /*   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         5.let { this.course_rating.rating = it.toFloat() }
         4.let { this.course_rating1.rating = it.toFloat() }
@@ -32,6 +32,6 @@ class CourseReview(result: Courses1) : Fragment() {
         binding!!.reviewNumber.text = (result.reviewCount.toString() + " review")
 
     }
-
+*/
 
 }

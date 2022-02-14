@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
-    app:startDestination="@id/top_Doc_Home">
+    app:startDestination="@id/noteBookSplashScreen">
     <fragment
         android:id="@+id/top_Doc_Home"
         android:name="com.cronocode.moviecatalog.TopDocHome"
@@ -17,4 +17,36 @@
         android:id="@+id/courseDetails"
         android:name="com.cronocode.moviecatalog.CourseDetails"
         android:label="CourseDetails" />
+    <fragment
+        android:id="@+id/noteBookSplashScreen"
+        android:name="com.cronocode.moviecatalog.notebook.NoteBookHome"
+        android:label="fragment_note_book"
+        tools:layout="@layout/fragment_note_book" >
+        <action
+            android:id="@+id/action_noteBookSplashScreen_to_createNotes"
+            app:destination="@id/createNotes" />
+        <action
+            android:id="@+id/action_noteBookSplashScreen_to_editNotes"
+            app:destination="@id/editNotes" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNotes"
+        android:name="com.cronocode.moviecatalog.notebook.CreateNotes"
+        android:label="fragment_create_notes"
+        tools:layout="@layout/fragment_create_notes" >
+        <action
+            android:id="@+id/action_createNotes_to_noteBookSplashScreen"
+            app:destination="@id/noteBookSplashScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNotes"
+        android:name="com.cronocode.moviecatalog.notebook.EditNotes"
+        android:label="EditNotes" >
+        <action
+            android:id="@+id/action_editNotes_to_noteBookSplashScreen"
+            app:destination="@id/noteBookSplashScreen" />
+        <argument
+            android:name="data"
+            app:argType="string" />
+    </fragment>
 </navigation>
