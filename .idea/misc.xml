@@ -3,14 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/buttom_background.xml" value="0.1915" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/buttom_background1.xml" value="0.1915" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/button_bg_gradiant.xml" value="0.1275" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/circle_image.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/clock_1.xml" value="0.1915" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/delete_button.xml" value="0.1275" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/edit_button.xml" value="0.1275" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/edittaxt_background.xml" value="0.1915" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/green_dot.xml" value="0.1915" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1915" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/progresbar.xml" value="0.1275" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/red_dot.xml" value="0.1915" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/small_button.xml" value="0.1275" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/vector.xml" value="0.2351851851851852" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/video_chat_1.xml" value="0.2351851851851852" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/view_background.xml" value="0.1275" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/drawable/yellow_dot.xml" value="0.1915" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/activity_splash_screen1.xml" value="0.25" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/course_curriculum.xml" value="0.25" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/course_details.xml" value="0.2" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/course_instructor.xml" value="0.25" />
@@ -18,14 +29,24 @@
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/course_overview.xml" value="0.25" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/course_reviews.xml" value="0.2" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/course_title.xml" value="0.25" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/deete_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/dialog_update.xml" value="0.25" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_cours_curriculum.xml" value="0.25" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_course_details.xml" value="0.2" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_course_overview.xml" value="0.25" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_course_review.xml" value="0.2" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_couse_instructor.xml" value="0.25" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_create_notes.xml" value="0.25" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_edit_notes.xml" value="0.25" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_movie_home.xml" value="0.25" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_note_book.xml" value="0.25" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_note_book_home.xml" value="0.25" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_splash_screen.xml" value="0.25" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/fragment_top_doc_home.xml" value="0.25" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/item.xml" value="0.25" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/item_row.xml" value="0.25" />
         <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/movie_item.xml" value="0.25" />
+        <entry key="..\:/Users/arind/AndroidStudioProjects/MovieCatalogApp-master/app/src/main/res/layout/notebook_ticket.xml" value="0.25" />
         <entry key="..\:/Users/arind/MovieCatalogApp-master/app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/arind/MovieCatalogApp-master/app/src/main/res/layout/course_item.xml" value="0.264" />
         <entry key="..\:/Users/arind/MovieCatalogApp-master/app/src/main/res/layout/fragment_movie_home.xml" value="0.25" />

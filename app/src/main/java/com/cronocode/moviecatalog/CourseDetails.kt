@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.cronocode.moviecatalog.databinding.FragmentCourseDetailsBinding
 import com.cronocode.moviecatalog.models.Courses1
-import kotlinx.android.synthetic.main.fragment_course_details.*
+//import kotlinx.android.s.main.fragment_course_details.*
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -43,7 +43,7 @@ class CourseDetails : Fragment() {
             Glide.with(requireContext()).load(result.instructor.image)
                 .into(binding!!.doctorImageView2)
             binding!!.time.text = getDateTime(result.courseDuration!!.toLong())
-            result.rating?.let { this.course_rating.rating = it.toFloat() }
+         //   result.rating?.let { this.course_rating.rating = it.toFloat() }
             binding!!.ratingDetails.text = (result.reviewCount.toString() + " rating")
             var time=getDateTime1(result.endDate!!)
             binding!!.lastDate.text=time
